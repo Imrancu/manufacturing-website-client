@@ -8,7 +8,7 @@
         "quantity": 2000      
     },
     {
-        "_id": 1,
+        "_id": 2,
         "name": "Heated Cabinets",
         "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png&width=250&height=250",
         "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
@@ -16,35 +16,43 @@
         "quantity": 2000      
     },
     {
-        "_id": 1,
+        "_id": 3,
         "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png&width=250&height=250",
+        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
         "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
         "price": 100,
         "quantity": 2000      
     },
     {
-        "_id": 1,
+        "_id": 4,
         "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png&width=250&height=250",
+        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
         "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
         "price": 100,
         "quantity": 2000      
     },
     {
-        "_id": 1,
+        "_id": 5,
         "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png&width=250&height=250",
+        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
         "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
         "price": 100,
         "quantity": 2000      
     },
     {
-        "_id": 1,
+        "_id": 6,
         "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png&width=250&height=250",
+        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
         "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
         "price": 100,
         "quantity": 2000      
     },
+    {
+        "_id": 7,
+        "name": "Heated Cabinets",
+        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
+        "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
+        "price": 100,
+        "quantity": 2000      
+    }
 ]
