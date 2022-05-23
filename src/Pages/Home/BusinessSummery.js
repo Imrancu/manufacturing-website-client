@@ -31,7 +31,8 @@ const BusinessSummery = () => {
             <h1 className='mb-10 text-3xl font-semibold text-center uppercase text-white'>Our Credits</h1>
             <div className='grid lg:grid-cols-3 gap-5'>
                 {
-                    allInfo.map(info => <InfoCard
+                    allInfo.map(info =>
+                    <InfoCard
                         info={info}
                     />)
                 }

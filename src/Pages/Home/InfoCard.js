@@ -1,16 +1,17 @@
 import React from 'react';
 
 
+
 const InfoCard = (props) => {
     const { title, image, qty } = props.info;
     return (
         <div class="card bg-base-100 shadow-xl">
-            <figure class="pt-5">
+            <figure class="pt-5 mb-[-20px]">
                 <img src={image} alt="Shoes" class="rounded-xl w-32" />
             </figure>
             <div class="card-body items-center text-center">
-                <h2 class="card-title mt-[-24px]">{title}</h2>
-                <h1 className='text-4xl text-white font-bold bg-primary rounded-full p-2'>{qty}</h1>
+                <h1 className='text-4xl font-bold rounded-full p-2'>{qty}+</h1>
+                <h2 class="">{title}</h2>
             </div>
         </div>
     );
