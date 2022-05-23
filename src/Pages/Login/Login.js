@@ -15,20 +15,21 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    let errorMessage;
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
-
+    
     useEffect( () =>{
         if (user || gUser) {
             navigate(from, { replace: true });
         }
     }, [from, navigate, user, gUser])
-
+    
     if (loading || gLoading) {
         return <Loading></Loading>
     }
+    
+    let errorMessage;
 
     if(error || gError){
         errorMessage= <p className='text-red-500'><small>{error?.message || gError?.message }</small></p>
@@ -97,7 +98,7 @@ const Login = () => {
                         {errorMessage}
                         <input className='btn btn-primary w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
-                    <p><small>New to Doctors Portal <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
+                    <p><small>New to Refrigerator Manufacturing? <Link className='text-primary' to="/signup">Create a New Account</Link></small></p>
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
