@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p>Copyright © 2022 - All right reserved by Refrigerator Mnufacturing</p>
+                <p>Copyright © 2022 - All right reserved by Refrigerator Manufacturing</p>
             </div>
         </footer>
     );
