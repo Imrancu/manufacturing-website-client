@@ -6,7 +6,7 @@ const InfoCard = (props) => {
     return (
         <div class="card bg-base-100 shadow-xl">
             <figure class="pt-5">
-                <img className='w-28' src={image} alt="Shoes" class="rounded-xl" />
+                <img src={image} alt="Shoes" class="rounded-xl w-32" />
             </figure>
             <div class="card-body items-center text-center">
                 <h2 class="card-title mt-[-24px]">{title}</h2>
