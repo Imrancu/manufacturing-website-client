@@ -33,6 +33,7 @@ const BusinessSummery = () => {
                 {
                     allInfo.map(info =>
                     <InfoCard
+                        key={info._id}
                         info={info}
                     />)
                 }
