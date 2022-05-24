@@ -27,7 +27,6 @@ const Navbar = ({ children }) => {
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal gap-x-3">
                             <li><NavLink to="/" className='rounded-lg'>Home</NavLink></li>
-                            <li><NavLink to="/purchase" className='rounded-lg'>Purchase</NavLink></li>
                             {user && <li><NavLink to="/dashboard" className='rounded-lg'>Dashboard</NavLink></li>}
                             <li><NavLink to="/blogs" className='rounded-lg'>Blogs</NavLink></li>
                             <li>{user ? <button onClick={logout} className="btn rounded-lg btn-ghost">Sign Out</button> : <NavLink to="/login" className='rounded-lg'>Login</NavLink>}</li>
