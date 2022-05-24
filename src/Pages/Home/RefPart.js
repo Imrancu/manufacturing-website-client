@@ -14,7 +14,7 @@ const RefPart = (props) => {
                     <p><small>Price: ${price}</small></p>
                     <p><small>QTY: {quantity}</small></p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn btn-primary">Purchase Now</button>
                     </div>
                 </div>
             </div>
