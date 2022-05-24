@@ -2,12 +2,12 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div class="flex flex-row gap-10 px-20">
+        <div class="flex flex-row gap-10 mb-20 px-20">
             <div className='basis-2/6 flex bg-primary rounded-xl p-5 shadow-2xl justify-center items-center'>
                 <div>
-                    <h1 className='text-3xl font-semibold my-5 text-white'>Dedicated Customer Teams & An Agile Services</h1>
+                    <h1 className='text-3xl font-semibold my-5 text-white'>Dedicated Customer Teams and An Agile Services</h1>
                     <p className='my-5 text-white'>
-                        <small>Dedicated Customer Teams & An Agile Services
+                        <small>Dedicated Customer Teams and An Agile Services
                             Our worldwide presence ensures the timeliness, cost efficiency and compliance adherence required to ensure your production timelines are met.</small>
                     </p>
                     <button class="btn btn-outline">Download Brochure</button>
