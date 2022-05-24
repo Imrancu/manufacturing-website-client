@@ -4,8 +4,6 @@ import auth from '../../firebase.init';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth)
-
-
     return (
         <div>
             <h1>{user.email}</h1>
