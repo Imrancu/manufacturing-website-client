@@ -4,54 +4,54 @@
         "name": "Heated Cabinets",
         "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png&width=250&height=250",
         "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
-        "price": 100,
-        "quantity": 2000      
+        "price": 300,
+        "quantity": 20000      
     },
     {
         "_id": 2,
-        "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png&width=250&height=250",
-        "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
-        "price": 100,
-        "quantity": 2000      
+        "name": "G3 Counters",
+        "image": "https://www.fosterrefrigerator.com/images/media/product_ranges/47/en/43102.jpg&width=250&height=250",
+        "description": "The versatile Foster EcoPro G3 counter range offers a huge selection of models, build options and accessories to ensure you find the perfect storage solution for your business. This robust, high-performance commercial refrigeration counter is fitted with energy efficient, commercial grade components for maximum reliability.",
+        "price": 150,
+        "quantity": 30000      
     },
     {
         "_id": 3,
-        "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
-        "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
+        "name": "Blast Chillers and Freezers",
+        "image": "https://www.fosterrefrigerator.com/images/media/products/Blast%20Chillers.jpg&width=250&height=250",
+        "description": "As the first company to introduce blast chilling to the industry, we offer a superb range of blast chillers and freezers, including our blast chillers and occasional freezers range. These are specially designed with a tray loading feature to utilise storage space and guarantee food safety. By swiftly reducing the temperature of food, our blast chillers and shock freezers ensure cooked food retains its quality.",
         "price": 100,
         "quantity": 2000      
     },
     {
         "_id": 4,
-        "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
-        "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
+        "name": "Drink Service",
+        "image": "https://www.fosterrefrigerator.com/images/media/product_types/5/en/f-40-with-model.jpg&width=250&height=250",
+        "description": "From drinking water coolers and ice cubers to ice flakers and ice dispensers, you’re sure to find a product to suit you and your business needs. Our high-quality water coolers produce refreshingly cool water to satisfy your customers, while our reliable ice cubers are available in a variety of sizes and designs, giving you the freedom to choose the right product for you.",
         "price": 100,
         "quantity": 2000      
     },
     {
         "_id": 5,
-        "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
-        "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
-        "price": 100,
-        "quantity": 2000      
+        "name": "Walk In Fridges",
+        "image": "https://www.fosterrefrigerator.com/images/assets/img/coldstores/coldroom.jpg&width=250&height=250",
+        "description": "We offer an excellent range of walk in coldrooms, including our custom configuration coldrooms which are built bespoke to you and your business needs, while always keeping in mind reliability and energy efficiency. Our Proline range is also available in a selection of sizes to suit every space, and can feature multiple add-ons to help you personalise your coldstore.",
+        "price": 200,
+        "quantity": 25000      
     },
     {
         "_id": 6,
-        "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
-        "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
-        "price": 100,
-        "quantity": 2000      
+        "name": "Modular Blast Chillers",
+        "image": "https://www.fosterrefrigerator.com/images/assets/img/coldstores/Modular%20Blast%20chillers.jpg&width=250&height=250",
+        "description": "Our modular blast chillers and shock freezers are available in a variety of sizes, to ensure you find the right product for you and your business. These are all fitted with energy efficient and operator-friendly fans which cut-out whenever the door is opened to save energy and to keep you in total control of the cook-chill process.",
+        "price": 250,
+        "quantity": 15000      
     },
     {
         "_id": 7,
-        "name": "Heated Cabinets",
-        "image": "https://www.fosterrefrigerator.com/images/media/product_types/1/en/microsoftteams-image-2.png",
-        "description": "Easy to manoeuvre and reliable, our heated cabinets are ideal for transporting heated products to the point of service. Our heated holding cabinets are also extremely energy efficient, maintaining +70ºC for up to 1 hour without power. They also feature a built-in humidity reservoir to keep heated food in perfect condition prior to service and are available in two sizes.",
+        "name": "Prep Stations",
+        "image": "https://www.fosterrefrigerator.com/images/files/products/images/16102.jpg&width=250&height=250",
+        "description": "Whether it’s pizza prepping or dessert designing or sandwich crafting, our stainless steel prep stations are available in a variety of sizes and designs to help make food preparation as simple as possible. Our three door prep station is also available with a roller blind cover for enhanced food safety and hygiene.",
         "price": 100,
         "quantity": 2000      
     }

@@ -28,7 +28,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/purchase' element={
+        <Route path='/purchase/:id' element={
           <RequireAuth>
             <Purchase />
           </RequireAuth>
@@ -43,7 +43,7 @@ function App() {
           <Route path='myProfile' element={<MyProfile/>} />
         </Route>
         <Route path='/signup' element={<SignUp />} />
-        <Route path='*' element={<NotFound />} />
+        {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
       <Footer />
     </Navbar>

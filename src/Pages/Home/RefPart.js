@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const RefPart = (props) => {
-    const { name, price, description, image, quantity } = props.part;
+    const {_id, name, price, description, image, quantity } = props.part;
+    const navigate = useNavigate();
 
     return (
             <div className="card bg-base-100 shadow-xl">
@@ -14,7 +16,9 @@ const RefPart = (props) => {
                     <p><small>Price: ${price}</small></p>
                     <p><small>QTY: {quantity}</small></p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Purchase Now</button>
+                        <button 
+                        onClick={()=> navigate(`/purchase/${_id}`)}
+                        className="btn btn-primary">Purchase Now</button>
                     </div>
                 </div>
             </div>
