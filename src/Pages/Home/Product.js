@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const RefPart = (props) => {
-    const {_id, name, price, description, image, quantity } = props.part;
+const Product = ({product}) => {
+    const {_id, name, price, description, image, quantity } = product;
     const navigate = useNavigate();
 
     return (
@@ -25,4 +25,4 @@ const RefPart = (props) => {
     );
 };
 
-export default RefPart;
+export default Product;

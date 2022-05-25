@@ -1,4 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './Components/Navbar/Navbar';
 import Blogs from './Pages/Blogs/Blogs';
 import AddReview from './Pages/Dashboard/AddReview';
@@ -11,7 +13,6 @@ import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import Purchase from './Pages/Purchage/Purchase';
-// import { publicRoute } from './Routes/PublicRoutes';
 
 
 
@@ -45,6 +46,7 @@ function App() {
         <Route path='/signup' element={<SignUp />} />
         {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
+      <ToastContainer/>
       <Footer />
 
     </>

@@ -2,7 +2,7 @@ import React from 'react';
 import AboutUs from './AboutUs';
 import BusinessSummery from './BusinessSummery';
 import Contact from './Contact';
-import RefParts from './RefParts';
+import Products from './Products';
 import Reviews from './Reviews';
 import Slider from './Slider';
 
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <Slider/>
-            <RefParts/>
+            <Products/>
             <BusinessSummery/>
             <AboutUs/>
             <Reviews/>
