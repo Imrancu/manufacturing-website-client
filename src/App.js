@@ -10,7 +10,6 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
-import NotFound from './Pages/NotFound/NotFound';
 import Purchase from './Pages/Purchage/Purchase';
 // import { publicRoute } from './Routes/PublicRoutes';
 
@@ -19,7 +18,8 @@ import Purchase from './Pages/Purchage/Purchase';
 
 function App() {
   return (
-    <Navbar>
+    <>
+      <Navbar />
       <Routes>
         {/* {
             publicRoute.map(({path, Component}, index) => <Route key={index} path={path} element={<Component/>} />)
@@ -38,15 +38,16 @@ function App() {
             <Dashboard />
           </RequireAuth>
         } >
-          <Route index element={<AddReview/>} />
-          <Route path='myOrder' element={<MyOrder/>} />
-          <Route path='myProfile' element={<MyProfile/>} />
+          <Route index element={<AddReview />} />
+          <Route path='myOrder' element={<MyOrder />} />
+          <Route path='myProfile' element={<MyProfile />} />
         </Route>
         <Route path='/signup' element={<SignUp />} />
         {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
       <Footer />
-    </Navbar>
+
+    </>
   );
 }
 

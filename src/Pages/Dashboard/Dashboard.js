@@ -3,9 +3,9 @@ import { Link, Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
-        <div className="drawer drawer-mobile mt-14 px-20">
+        <div className="drawer drawer-mobile px-20" >
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex flex-col items-center justify-center">
+            <div className="drawer-content flex flex-col items-center justify-center py-28">
                 <h1 className='text-center text-3xl'>Welcome to Dashboard</h1>
                 <Outlet/>
 
