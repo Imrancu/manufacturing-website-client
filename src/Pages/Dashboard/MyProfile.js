@@ -7,8 +7,6 @@ import UserInfo from './UserInfo';
 const MyProfile = () => {
     const [user] = useAuthState(auth)
     const { register,reset, formState: { errors }, handleSubmit } = useForm();
-
-
     const onSubmit = (data) => {
         const email = user?.email;
         const { name, url, address, phone } = data
@@ -26,11 +24,10 @@ const MyProfile = () => {
         reset()
     }
     return (
-        <div className='flex h-screen justify-center items-center'>
-            <div className="flex gap-x-7 bg-base-100 shadow-xl">
+            <div className="grid lg:grid-cols-2 gap-x-7 bg-base-100">
                 <div className="card-body border rounded-2xl">
                     <h2 className="text-center text-2xl font-bold">Update Profile</h2>
-                    <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 gap-8">
+                    <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 gap-x-8">
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Name</span>
@@ -55,7 +52,7 @@ const MyProfile = () => {
                             </label>
                             <input
                                 type="email"
-                                value={user.email}
+                                defaultValue={user.email}
                                 className="input input-bordered w-full max-w-xs"
                             />
                         </div>
@@ -107,14 +104,13 @@ const MyProfile = () => {
                                 })}
                             />
                         </div>
-                        <input className='btn w-full max-w-xs btn-primary text-white mt-9' type="submit" value="Update" />
+                        <input className='btn w-full max-w-xs btn-primary text-white mt-9' type="submit" defaultValue="Update" />
                     </form>
                 </div>
                 <div className='border rounded-2xl'>
                     <UserInfo />
                 </div>
             </div>
-        </div >
     );
 };
 

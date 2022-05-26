@@ -15,11 +15,11 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    const [token] = useToken(user || gUser)
 
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
+    const [token] = useToken(user || gUser)
     
     useEffect( () =>{
         if (token) {
@@ -98,7 +98,7 @@ const Login = () => {
                         </div>
 
                         {errorMessage}
-                        <input className='btn btn-primary w-full max-w-xs text-white' type="submit" value="Login" />
+                        <input className='btn btn-primary w-full max-w-xs text-white' type="submit" defaultValue="Login" />
                     </form>
                     <p><small>New to Refrigerator Manufacturing? <Link className='text-primary' to="/signup">Create a New Account</Link></small></p>
                     <div className="divider">OR</div>

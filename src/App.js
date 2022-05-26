@@ -3,16 +3,21 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './Components/Navbar/Navbar';
 import Blogs from './Pages/Blogs/Blogs';
+import AddProduct from './Pages/Dashboard/AddProduct';
 import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
+import ManageProduct from './Pages/Dashboard/ManageProduct';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import Users from './Pages/Dashboard/Users';
 import Footer from './Pages/Home/Footer';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
+import RequireAdmin from './Pages/Login/RequireAdmin';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
-import Purchase from './Pages/Purchage/Purchase';
+import Purchase from './Pages/Purchase/Purchase';
 
 
 
@@ -40,8 +45,24 @@ function App() {
           </RequireAuth>
         } >
           <Route index element={<AddReview />} />
-          <Route path='myOrder' element={<MyOrder />} />
           <Route path='myProfile' element={<MyProfile />} />
+          <Route path='myOrder' element={<MyOrder />} />
+          <Route path='users' element={
+          <RequireAdmin>
+            <Users />
+          </RequireAdmin>} />
+          <Route path='manageOrders' element={
+          <RequireAdmin>
+            <ManageOrders/>
+          </RequireAdmin>} />
+          <Route path='manageProduct' element={
+          <RequireAdmin>
+            <ManageProduct/>           
+          </RequireAdmin>} />
+          <Route path='addProduct' element={
+          <RequireAdmin>
+            <AddProduct/>
+          </RequireAdmin>} />
         </Route>
         <Route path='/signup' element={<SignUp />} />
         {/* <Route path='*' element={<NotFound />} /> */}

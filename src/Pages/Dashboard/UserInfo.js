@@ -3,27 +3,27 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 const UserInfo = () => {
+
     const [user] = useAuthState(auth);
     const email = user.email
-    const [userInfo, setUserInfo] = useState({})
-    const {name, phone, address, url} = userInfo
+    const [userData, setUserData] = useState({})
     useEffect(() => {
         fetch(`http://localhost:5000/user/${email}`)
             .then(res => res.json())
             .then(data => {
-                setUserInfo(data)
+                setUserData(data);
             })
-    }, [userInfo, email])
+    }, [userData, email])
 
     return (
         <div>
-            <div class="card-body">
+            <div className="card-body">
                 <h2 className="text-center text-2xl font-bold">Personal Info</h2>
-                <p>Name: {name}</p>
-                <p>Email: {email}</p>
-                <p>Phone: {phone}</p>
-                <p>Address: {address}</p>
-                <p>LinkedIn: {url}</p>
+                <p>Name: {userData.name}</p>
+                <p>Email: {userData.email}</p>
+                <p>Phone: {userData.phone}</p>
+                <p>Address: {userData.address}</p>
+                <p>LinkedIn: {userData.url}</p>
             </div>
         </div>
     );
