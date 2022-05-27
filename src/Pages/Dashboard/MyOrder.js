@@ -1,4 +1,3 @@
-import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
@@ -6,32 +5,17 @@ import auth from '../../firebase.init';
 
 const MyOrder = () => {
 
-    const [orders, setOrders] = useState([]);
-    const [user] = useAuthState(auth);
     const navigate = useNavigate()
-
+    const [orders, setOrders] = useState([])
+    console.log(orders);
+    const [user, loading, error] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?buyer=${user.email}`, {
-                method: "GET",
-                headers: {
-                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
-                }
-            })
-                .then(res => {
-                    console.log('res', res);
-                    if (res.status === 401 || res.status === 403) {
-                        signOut(auth);
-                        localStorage.removeItem('accessToken');
-                        navigate('/')
-                    }
-                    return res.json()
-                })
-                .then(data => {
-                    setOrders(data)
-                });
+            fetch(`http://localhost:5000/order/${user.email}`)
+                .then(res => res.json())
+                .then(data => setOrders(data))
         }
-    }, [user, navigate])
+    }, [user])
     return (
         <div className="overflow-x-auto mt-5">
             <h1>My orders: {orders.length}</h1>
@@ -46,8 +30,8 @@ const MyOrder = () => {
                 </thead>
                 <tbody>
                     {
-                        orders.map(order =>
-                            <tr>
+                        orders.map((order, index) =>
+                            <tr key={index}>
                                 <td>{order.name}</td>
                                 <td>{order.client}</td>
                                 <td>{order.price}</td>

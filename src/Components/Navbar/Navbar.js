@@ -26,6 +26,7 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box flex gap-x-3">
                             <li><NavLink to="/" className='rounded-lg'>Home</NavLink></li>
+                            <li><NavLink to="/portfolio" className='rounded-lg'>Portfolio</NavLink></li>
                             {user && <li><NavLink to="/dashboard" className='rounded-lg'>Dashboard</NavLink></li>}
                             <li><NavLink to="/blogs" className='rounded-lg'>Blogs</NavLink></li>
                             <li>{user ? <button onClick={logout} className="btn rounded-lg btn-ghost">Sign Out</button> : <NavLink to="/login" className='rounded-lg'>Login</NavLink>}</li>
@@ -36,6 +37,7 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li><NavLink to="/" className='rounded-lg'>Home</NavLink></li>
+                        <li><NavLink to="/portfolio" className='rounded-lg'>Portfolio</NavLink></li>
                         {user && <li><NavLink to="/dashboard" className='rounded-lg'>Dashboard</NavLink></li>}
                         <li><NavLink to="/blogs" className='rounded-lg'>Blogs</NavLink></li>
                         <li>{user ? <button onClick={logout} className="btn rounded-lg btn-ghost">Sign Out</button> : <NavLink to="/login" className='rounded-lg'>Login</NavLink>}</li>

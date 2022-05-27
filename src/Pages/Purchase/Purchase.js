@@ -9,7 +9,7 @@ const Purchase = () => {
     const [details, setDetails] = useState({});
     const {name, price , quantity, image, description } = details;
     const { id } = useParams();
-
+    const updateQuantity = quantity >= 20
     useEffect(() => {
         fetch(`http://localhost:5000/product/${id}`)
             .then(res => res.json())
@@ -24,7 +24,7 @@ const Purchase = () => {
             client: user.email,
             name: name,
             price: price,
-            quantity: quantity,
+            quantity: updateQuantity,
             phone: phone,
         }
         fetch('http://localhost:5000/order', {
@@ -83,7 +83,7 @@ const Purchase = () => {
                                 <input 
                                 type="text" 
                                 name='price' 
-                                value={price * quantity} 
+                                value={price} 
                                 className="input input-bordered w-full max-w-xs" />
                                 <label className='label'>
                                     <span className="label-text">Product Quantity</span>
@@ -91,7 +91,7 @@ const Purchase = () => {
                                 <input
                                 type="text" 
                                 name='quantity'
-                                value={quantity}
+                                placeholder='minimum 20'
                                 className="input input-bordered w-full max-w-xs mb-4"
                                 />
                                 <input 

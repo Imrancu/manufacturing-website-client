@@ -2,8 +2,8 @@ import React from 'react';
 
 const NotFound = () => {
     return (
-        <div>
-            <h1 className='text-3xl text-center mt-16'>This page is not found.... 404</h1>
+        <div class="card h-screen rounded-none image-full">
+            <figure><img src="https://i.pinimg.com/originals/90/fb/43/90fb4379e62ef4104a0bd58bae82fe35.gif" alt="error page" /></figure>
         </div>
     );
 };
