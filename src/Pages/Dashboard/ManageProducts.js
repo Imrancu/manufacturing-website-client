@@ -6,7 +6,7 @@ const ManageProducts = () => {
     const [manageProducts, setManageProducts] = useState([]);
     const [deleteProduct, setDeleteProduct] = useState(null)
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://stormy-cove-38680.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setManageProducts(data));
     }, [])

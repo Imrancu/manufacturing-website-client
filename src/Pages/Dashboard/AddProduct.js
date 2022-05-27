@@ -27,7 +27,7 @@ const AddProduct = () => {
                     description: data.description,
                     quantity: data.quantity
                 }
-                fetch('http://localhost:5000/addProduct', {
+                fetch('https://stormy-cove-38680.herokuapp.com/addProduct', {
                     method: "POST",
                     headers: {
                         'content-type': "application/json",

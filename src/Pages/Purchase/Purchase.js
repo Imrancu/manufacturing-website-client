@@ -11,7 +11,7 @@ const Purchase = () => {
     const { id } = useParams();
     const updateQuantity = quantity >= 20
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://stormy-cove-38680.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => setDetails(data))
     }, [details, id]);
@@ -27,7 +27,7 @@ const Purchase = () => {
             quantity: updateQuantity,
             phone: phone,
         }
-        fetch('http://localhost:5000/order', {
+        fetch('https://stormy-cove-38680.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'

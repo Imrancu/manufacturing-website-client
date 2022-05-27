@@ -12,7 +12,7 @@ const MyProfile = () => {
         const { name, url, address, phone } = data
         const currentUser = { name, url, address, phone }
         if (email) {
-            fetch(`http://localhost:5000/user/${email}`, {
+            fetch(`https://stormy-cove-38680.herokuapp.com/user/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type':'application/json'

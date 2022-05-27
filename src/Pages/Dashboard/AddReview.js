@@ -14,7 +14,7 @@ const AddReview = () => {
             ...data,
             email: user.email
         }
-        fetch('http://localhost:5000/review', {
+        fetch('https://stormy-cove-38680.herokuapp.com/review', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

@@ -11,7 +11,7 @@ const MyOrder = () => {
     const [user, loading, error] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order/${user.email}`)
+            fetch(`https://stormy-cove-38680.herokuapp.com/order/${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrders(data))
         }
