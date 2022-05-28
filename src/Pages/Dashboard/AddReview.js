@@ -31,10 +31,10 @@ const AddReview = () => {
         <div className='flex justify-center items-center'>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h1 className='text-2xl text-center my-6'>Give A Review Here!</h1>
-                <div class="card w-96 outline text-dark-content">
-                    <div class="card-body">
+                <div className="card w-96 outline text-dark-content">
+                    <div className="card-body">
                         <textarea
-                            class="textarea input-bordered"
+                            className="textarea input-bordered"
                             {...register("description", { required: true })}
                             placeholder="Write your comment">
                         </textarea>
@@ -43,11 +43,11 @@ const AddReview = () => {
                             placeholder="Type your rating up to 5"
                             {...register("rating",
                                 { min: 0, max: 5, required: true })}
-                            class="input input-bordered w-full max-w-xs" />
+                            className="input input-bordered w-full max-w-xs" />
 
-                        <div class="card-actions justify-center">
+                        <div className="card-actions justify-center">
                             {
-                                <button class="btn btn-outline">Add Review</button>
+                                <button className="btn btn-outline">Add Review</button>
                             }
                         </div>
                     </div>

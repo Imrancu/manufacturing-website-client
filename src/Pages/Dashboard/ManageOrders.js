@@ -10,8 +10,8 @@ const ManageOrders = () => {
     return (
         <div>
             <h1 className='text-3xl text-center font-semibold my-4'>All Orders Here</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th>SL No</th>

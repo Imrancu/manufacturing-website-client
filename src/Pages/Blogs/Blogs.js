@@ -35,7 +35,7 @@ const Blogs = () => {
     return (
         <div className='px-20'>
             <h1 className='text-3xl text-center font-semibold my-7'>My Blogs Here</h1>
-            <div class="gap-6 bg-base-100 shadow-xl grid lg:grid-cols-2">
+            <div className="gap-6 bg-base-100 shadow-xl grid lg:grid-cols-2">
                 {
                     blogs.map((blog, index) => <Blog
                     key={index}

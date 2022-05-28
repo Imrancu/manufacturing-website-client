@@ -5,8 +5,8 @@ const Review = (props) => {
     return (
         <div className="card bg-base-100 shadow-xl">
             <div className="card-body items-center text-center">
-                <div class="avatar">
-                    <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <div className="avatar">
+                    <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                         <img src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" alt='avater' />
                     </div>
                 </div>
