@@ -13,7 +13,7 @@ const CheckoutForm = ({ order }) => {
     const {_id, price, client, name } = order;
     useEffect(() => {
 
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://stormy-cove-38680.herokuapp.com/create-payment-intent', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -83,7 +83,7 @@ const CheckoutForm = ({ order }) => {
                     order: _id,
                     transactionId: paymentIntent.id
                 }
-                fetch(`http://localhost:5000/orderPayment/${_id}`, {
+                fetch(`https://stormy-cove-38680.herokuapp.com/orderPayment/${_id}`, {
                     method: "PATCH",
                     headers: {
                         'content-type': 'application/json'
