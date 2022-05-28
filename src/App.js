@@ -10,6 +10,7 @@ import ManageOrders from './Pages/Dashboard/ManageOrders';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import Payment from './Pages/Dashboard/Payment';
 import Users from './Pages/Dashboard/Users';
 import Footer from './Pages/Home/Footer';
 import Home from './Pages/Home/Home';
@@ -29,9 +30,6 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        {/* {
-            publicRoute.map(({path, Component}, index) => <Route key={index} path={path} element={<Component/>} />)
-          } */}
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
         <Route path='/blogs' element={<Blogs />} />
@@ -50,6 +48,7 @@ function App() {
           <Route path="myProfile" element={<MyProfile />} />
           <Route path='addReview' element={<AddReview />} />
           <Route path='myOrder' element={<MyOrder />} />
+          <Route path='payment:id' element={<Payment />} />
           <Route path='users' element={
             <RequireAdmin>
               <Users />
