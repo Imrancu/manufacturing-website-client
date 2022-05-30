@@ -16,8 +16,8 @@ const blogs = [
         answer: 'JavaScript is a prototype-based, Object Oriented programming language. After the ES6 updates, JavaScript allowed for “prototypal inheritance”, meaning that objects and methods can be shared, extended, and copied. Sharing amid objects makes for easy inheritance of structure (data fields), behavior (functions / methods), and state (data values). JavaScript is the most common of the prototype-capable languages, and its capabilities are relatively unique. When used appropriately, prototypical inheritance in JavaScript is a powerful tool that can save hours of coding.'
     },
     {
-        question: 'Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts?',
-        answer: 'It is all about Updating phase. when we update the state of a component all it\'s children are going to be rendered as well. or our entire component tree rendered. but when i say our entire component tree is rendered that doesn\’t mean that the entire DOM is updated. when a component is rendered we basically get a react element, so that is updating our virtual dom. product = [...] means spread operator, it just copy any part of an array but setState is used to render full array.'
+        question: "Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts?",
+        answer: "It is all about Updating phase. when we update the state of a component all it's children are going to be rendered as well. or our entire component tree rendered. but when i say our entire component tree is rendered that doesn't mean that the entire DOM is updated. when a component is rendered we basically get a react element, so that is updating our virtual dom. product = [...] means spread operator, it just copy any part of an array but setState is used to render full array."
     },
     {
         question: 'How does prototypical inheritance work?',

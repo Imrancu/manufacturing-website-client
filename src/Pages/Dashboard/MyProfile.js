@@ -52,7 +52,7 @@ const MyProfile = () => {
                             </label>
                             <input
                                 type="email"
-                                defaultValue={user.email}
+                                defaultdefaultvalue={user.email}
                                 className="input input-bordered w-full max-w-xs"
                             />
                         </div>
@@ -104,7 +104,7 @@ const MyProfile = () => {
                                 })}
                             />
                         </div>
-                        <input className='btn w-full max-w-xs btn-primary text-white mt-9' type="submit" defaultValue="Update" />
+                        <input className='btn w-full max-w-xs btn-primary text-white mt-9' type="submit" defaultdefaultvalue="Update" />
                     </form>
                 </div>
                 <div className='border rounded-2xl'>

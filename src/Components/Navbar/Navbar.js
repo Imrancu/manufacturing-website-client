@@ -34,7 +34,7 @@ const Navbar = () => {
                     </div>
 
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li><NavLink to="/" className='rounded-lg'>Home</NavLink></li>
                         <li><NavLink to="/portfolio" className='rounded-lg'>Portfolio</NavLink></li>

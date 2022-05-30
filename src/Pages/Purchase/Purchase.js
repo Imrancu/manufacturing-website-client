@@ -65,7 +65,7 @@ const Purchase = () => {
                                 </div>
                                 <input 
                                 type="email" 
-                                value={user.email}
+                                defaultValue={user.email}
                                 placeholder="Your Address" 
                                 className="input input-bordered w-full max-w-xs"
                                 />
@@ -75,7 +75,7 @@ const Purchase = () => {
                                 <input 
                                 type="text" 
                                 name='name' 
-                                value={name} 
+                                defaultValue={name} 
                                 className="input input-bordered w-full max-w-xs" />
                                 <label className='label'>
                                     <span className="label-text">Product Price</span>
@@ -83,7 +83,7 @@ const Purchase = () => {
                                 <input 
                                 type="text" 
                                 name='price' 
-                                value={price} 
+                                defaultValue={price} 
                                 className="input input-bordered w-full max-w-xs" />
                                 <label className='label'>
                                     <span className="label-text">Product Quantity</span>
@@ -101,7 +101,7 @@ const Purchase = () => {
                                 className="input input-bordered w-full max-w-xs mb-4"
                                 />
                                 <br />
-                                <input className='btn btn-primary' type="submit" defaultValue="Place An Order" />
+                                <input className='btn btn-primary' type="submit" defaultdefaultvalue="Place An Order" />
                             </div>
                         </div>
                     </form>

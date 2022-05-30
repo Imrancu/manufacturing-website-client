@@ -108,7 +108,7 @@ const AddProduct = () => {
                     />
                     
                 </div>
-                <input className='btn w-full max-w-xs btn-primary text-white' type="submit" defaultValue="Add Product" />
+                <input className='btn w-full max-w-xs btn-primary text-white' type="submit" defaultdefaultvalue="Add Product" />
             </form>
         </div>
     );

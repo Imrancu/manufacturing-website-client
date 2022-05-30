@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="flex flex-row gap-10 mb-20 px-20">
-            <div className='basis-2/6 flex bg-primary rounded-xl p-5 shadow-2xl justify-center items-center'>
+        <div className="grid lg:grid-cols-2 gap-10 mb-20 px-20">
+            <div className='flex bg-primary rounded-xl p-5 shadow-2xl justify-center items-center'>
                 <div>
                     <h1 className='text-3xl font-semibold my-5 text-white'>Dedicated Customer Teams and An Agile Services</h1>
                     <p className='my-5 text-white'>
@@ -13,7 +13,7 @@ const Contact = () => {
                     <button className="btn btn-outline">Download Brochure</button>
                 </div>
             </div>
-            <div className='basis-4/6 shadow-2xl p-5'>
+            <div className='shadow-2xl p-5'>
                 <div>
                     <h1 className='text-3xl font-semibold my-5'>Request A Quote</h1>
                     <p className='mb-5'>

@@ -98,7 +98,7 @@ const Login = () => {
                         </div>
 
                         {errorMessage}
-                        <input className='btn btn-primary w-full max-w-xs text-white' type="submit" defaultValue="Login" />
+                        <input className='btn btn-primary w-full max-w-xs text-white' type="submit" defaultdefaultvalue="Login" />
                     </form>
                     <p><small>New to Refrigerator Manufacturing? <Link className='text-primary' to="/signup">Create a New Account</Link></small></p>
                     <div className="divider">OR</div>

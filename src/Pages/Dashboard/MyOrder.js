@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyOrder = () => {
 
-    const navigate = useNavigate()
     const [orders, setOrders] = useState([])
-    console.log(orders);
     const [user, loading, error] = useAuthState(auth);
     useEffect(() => {
         if (user) {

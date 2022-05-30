@@ -2,19 +2,21 @@ import React from 'react';
 
 const Portfolio = () => {
     return (
-        <div className='flex gap-6 justify-center items-center my-6 px-20'>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <h1 className='text-2xl text-center font-semibold my-6'>About Me</h1>
-                <div className="avatar mx-auto">
-                    <div className="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                        <img src="https://i.ibb.co/Jd4YSLy/me-about.jpg" />
+        <div className='grid lg:grid-cols-2 gap-4 justify-center items-center my-6 px-20'>
+            <div className="card flex justify-center items-center w-50 h-screen bg-base-100 shadow-xl">
+                <div>
+                    <h1 className='text-2xl text-center font-semibold my-6'>About Me</h1>
+                    <div className="avatar flex justify-center">
+                        <div className="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="https://i.ibb.co/Jd4YSLy/me-about.jpg" />
+                        </div>
+                    </div>
+                    <div className="card-body text-center">
+                        <p>This is Mohammad Imran. Programming is my dream job that I enjoy so much. I also love to design social media and graphic elements via Adobe Creative softwares. I learnt a lots of new things with Programing-Hero.</p>
                     </div>
                 </div>
-                <div className="card-body text-center">
-                    <p>This is Mohammad Imran. Programming is my dream job that I enjoy so much. I also love to design social media and graphic elements via Adobe Creative softwares. I learnt a lots of new things with Programing-Hero.</p>
-                </div>
             </div>
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card flex justify-center items-center h-screen w-50 bg-base-100 shadow-xl">
                 <h1 className='text-2xl text-center font-semibold my-6'>Education</h1>
                 <div className="overflow-x-auto">
                     <table className="table w-full">
@@ -38,7 +40,6 @@ const Portfolio = () => {
                                 <td>Javascript</td>
                                 <td>ReactJs</td>
                                 <td>Mongodb</td>
-                                <td>Wordpress</td>
                             </tr>
                         </tbody>
                     </table>
